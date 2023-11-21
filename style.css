@@ -1,0 +1,217 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background:linear-gradient(rgba(0,0,0,0.2),rgba(0,0,0,0.2)), url(bg.png);
+    background-clip: inherit;
+    touch-action: pan-y;
+}
+.ani{
+    display: inline-block;
+    color: #ff7200;
+    font-size: 5vw;
+    font-weight: bold;
+    animation: flip 2s infinite;
+    animation-delay: calc(0.2s*var(--i));
+    letter-spacing: 0;
+    font-style: italic;
+    font-family: Franklin Gothic;
+}
+span.pink{
+    color: rgb(180, 27, 180);
+    font-size: 5vw;
+    font-weight: bold;
+    margin-left: 2rem;
+    font-style: italic;
+}
+@keyframes flip{
+    0%,80%{
+        transform: rotateY(360deg);
+    }
+}
+/*.bg{
+    position: relative;
+    float: right;
+    border-bottom-right-radius: 20px;
+    z-index: -2;
+}
+*/
+.para{
+    letter-spacing: 2px;
+    word-spacing: 3px;
+    color: rgb(1, 133, 133);
+    font-weight: bold;
+}
+.alak{
+    color: #fff;
+    font-style: italic;
+}
+.para1{
+    margin: 2px;
+    padding: 2px;
+    color: #fff;
+     font-style: italic;
+     font-weight: bold;
+}
+.a{
+    background-color: #fff;
+    color: #000;
+}
+
+.dias{
+    display: flex;
+    margin-left: 2rem;
+    font-style: italic;
+    margin-top: 11px;
+}
+.di{
+    width: 8%;
+    height: 5vh;
+    background-color: #fff;
+    color: #000;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.move{
+    position: absolute;
+    left: 10px;
+}
+.line{
+    position: absolute;
+    width: 1rem;
+    height: 5vh;
+    background-color: red;
+    left: 1.5rem;
+    border-top-left-radius: 10px;
+}
+.inr{
+    width: 8%;
+    height: 5vh;
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    border-bottom-right-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    box-shadow: 2px 3px 8px  #000;
+}
+.inr:hover{
+    background-color: rgb(60, 189, 0);
+    color: #000;
+    box-shadow: 2px 3px 8px 1px green;
+}
+#dia{
+   position: absolute;
+   left: 2.5rem;
+   rotate: 15deg;
+}
+.container{
+    position: relative;
+    margin-top: 5rem;
+}
+.container2{
+    margin-top: -14.8rem;
+    margin-left: 300px;
+}
+.one{
+    margin-left: 300px;
+}
+.two{
+    width: 7rem;
+}
+.container3{
+    margin-top: -14.8rem;
+    margin-left: 600px;
+}
+.three{
+    width: 5rem;
+}
+.four{
+    width: 7rem;
+}
+.last{
+    margin-left: 600px;
+}
+.footer{
+    margin-top: 6rem;
+    width: 100%;
+    height: 20vh;
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+}
+ul{
+    display: flex;
+    justify-content: center;
+    list-style-type: none;
+    line-height: 2;
+}
+a{
+    text-decoration: none;
+    color: #fff;
+    font-size: 1em;
+    transition: 0.2s all ease-in-out;
+}
+a:hover{
+    color: blue;
+    text-shadow: 2px 2px 8px blue;
+}
+.sec{
+    margin-left: 10rem;
+}
+.lastone{
+    font-style:Castellar ;
+    background-color: aqua;
+    text-align: center;
+    margin-top: 3rem;
+    color: #000;
+}
+
+
+
+
+
+@media (max-width:600px){
+    .di{
+        width: 12rem;
+    }
+    .inr{
+        width: 12rem;
+    }
+    .container{
+        cursor: pointer;
+    }
+    .container2{
+        margin-left: 0;
+        margin-top: 2rem;
+        cursor: pointer;
+    }
+    .line{
+        margin-left: 0;
+    }
+    .container3{
+        cursor: pointer;
+        margin-left: 0;
+        margin-top: 2rem;
+    }
+    .footer{
+        width: 100%;
+        height: 20vh;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        margin-left: -160px;
+    }
+    a{
+        font-size: 2.5vw;
+    }
+
+}
